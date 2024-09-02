@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "DocuCraft - A Documentation Website by Protocol",
+  title: "DocuCraft || Documentation Protocol",
   description: "A Documentation Website by Protocol",
 };
 
@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
                   <div className="absolute inset-0 bg-gradient-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100"></div>
                 </div>
               </div>
+              {children}
             </main>
           </div>
-          {children}
         </div>
       </body>
     </html>

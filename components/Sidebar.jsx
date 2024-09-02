@@ -21,7 +21,7 @@ const Sidebar = ({ docs }) => {
       return acc;
     }, {});
 
-  console.log(nonRoots);
+  //   console.log(nonRoots);
 
   return (
     <div className="sidebar">
