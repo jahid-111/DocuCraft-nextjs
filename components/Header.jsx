@@ -12,7 +12,7 @@ const Header = ({ docs }) => {
         style={{ "--bg-opacity-light": "0.5", "--bg-opacity-dark": "0.2" }}
       >
         <div className="container flex h-14 items-center justify-between gap-12">
-          <Search />
+          <Search docs={docs} />
         </div>
       </div>
       <Sidebar docs={docs} />
