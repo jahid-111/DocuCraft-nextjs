@@ -6,14 +6,13 @@ import ClientContentDisplay from "./ClientContentDisplay";
 
 const ContentDisplay = async ({ id }) => {
   const documentContent = await getDocumentsContent(id);
-  // console.log("Content HTML ", documentContent.contentHtml);
 
   return (
     <article className=" prose dark:prose-invert">
       <h2>{documentContent.title}</h2>
       <div>
         <span> Published On : {documentContent?.date}</span> by{" "}
-        <Link href={`/author/${documentContent?.author}`}>
+        <Link href={`/authors/${documentContent?.author}`}>
           {documentContent?.author}
         </Link>
         under the{" "}

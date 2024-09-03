@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <article className="">
       <div className="relative">
-        <div className=" relative mx-auto px-4 ">
+        <div className=" relative mx-auto ">
           <div className="mx-auto grid max-w-[40rem] grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
             <div className="flex flex-col lg:pb-6 lg:col-span-2 justify-center">
               <h1 className="mt-4 text-6xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
@@ -20,13 +20,12 @@ const Landing = () => {
               </p>
 
               <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#"
+                <Link
+                  href="/docs/Introduction"
                   className="inline-flex justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-700"
-                  target="_blank"
                 >
                   <span>Get Started</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative lg:col-span-3">

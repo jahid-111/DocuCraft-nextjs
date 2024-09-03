@@ -1,7 +1,8 @@
+import ContentDisplay from "@/components/ContentDisplay";
 import React from "react";
 
 const SubContentPage = ({ params: { subContentId } }) => {
-  return <div>{subContentId} hi</div>;
+  return <ContentDisplay id={subContentId} />;
 };
 
 export default SubContentPage;
